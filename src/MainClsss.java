@@ -1,4 +1,4 @@
-package scientific.calculator;
+package main.java.scientific_calculator;
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;
@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 import java.math.*;
 import java.util.*;
 
-public class ScientificCalculator extends Application {
+public class Scientific_Calculator extends Application {
 
     TextArea textarea;
     String showExpression = "";
@@ -135,7 +135,7 @@ public class ScientificCalculator extends Application {
         });
         root.getChildren().add(division);
 
-        Button delete = new Button("أ¢â€ ع¯");
+        Button delete = new Button("←");
         delete.setMaxSize(50, 30);
         delete.setTranslateX(80);
         delete.setTranslateY(-25);
@@ -481,7 +481,7 @@ public class ScientificCalculator extends Application {
         });
         root.getChildren().add(square);
 
-        Button squareRoot = new Button("أ¢ث†ع‘");
+        Button squareRoot = new Button("√");
         squareRoot.setMaxSize(50, 30);
         squareRoot.setTranslateX(140);
         squareRoot.setTranslateY(45);
@@ -493,7 +493,7 @@ public class ScientificCalculator extends Application {
                 ch = showExpression.charAt(showExpression.length() - 1);
                 if (!Character.isDigit(ch) && isSquare == false && ch != ')') {
 
-                    showExpression += "أ¢ث†ع‘";
+                    showExpression += "√";
                     hiddenExpression += "|";
                     textarea.setText(showExpression);
 
