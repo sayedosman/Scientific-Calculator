@@ -24,6 +24,7 @@ public class Our_calc extends Application{
             StackPane pane; //design pane
             //int fplus=0,fmin=0,fdiv=0,fmul=0, fmod=0,fsqrt=0,fsquare=0;// flags to know which process needed
 	    
+	    
 	 @Override
 	 public void start(Stage arg0) throws Exception {
 		// TODO Auto-generated method stub
